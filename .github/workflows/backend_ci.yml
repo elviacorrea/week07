@@ -85,7 +85,7 @@ jobs:
           # Install CI tools
           pip install pytest httpx
 
-      # 5. Run tests for product service
+      # 5. Run tests for product service 
       - name: Run product_service tests
         working-directory: backend/product_service
         env:
@@ -144,3 +144,5 @@ jobs:
     - name: Logout from Azure
       run: az logout
       if: always()
+
+#testing pipeline
